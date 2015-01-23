@@ -1,0 +1,9 @@
+@import "bourbon/bourbon";
+
+$font-stack: Electra ,Helvetica, sans-serif;
+$font-color: #5c7b98;
+
+body {
+	font: $font-stack;
+	color: $font-color;
+}
