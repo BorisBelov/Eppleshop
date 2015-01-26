@@ -5,7 +5,11 @@ $font-color: #5c7b98;
 $bg-color: #f4f6f9;
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -14,7 +18,7 @@ body {
 }
 
 .wrapper {
-
+	width:1000px;
 }
 
 ul {
@@ -63,12 +67,57 @@ Main content
 	background: #aaa;
 }
 
+.products__title {
+	text-align:center;
+}
+
 .products__card {
 	float:left;
 	width:230px;
 	height:234px;
 	border: 1px solid #aaa;
+	padding:10px;
+	
 	}
+
+/*
+===========================
+carousel
+===========================
+*/
+.slider{
+    position:relative;
+    display:inline-block;
+    margin-left:200px;
+}
+
+.slider__list--wrap {
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.slider__list {
+    
+    width: 2000px;
+    position:relative;
+    -webkit-transition:0.3s;
+    transition:0.3s;
+    left:0;
+}
+
+.slider__item {float:left;}
+.slider__controls-button {
+    position:absolute;
+    top:50px;
+}
+.slider__controls-button_next {
+    right: -100px;
+}
+.slider__controls-button_prev {
+    left:-100px;
+}
+
 
 /*
 ===========================
